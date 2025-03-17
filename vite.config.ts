@@ -1,14 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/cyber-security-website/", // Ensure correct base path
   build: {
-    outDir: "dist", // Should be "dist", not "build"
+    outDir: "dist", // Correct output folder
   },
-  base:"/cyber-security-website/",
-  plugins: [
-    tailwindcss(),
-    react()],
+  plugins: [react()],
 })
