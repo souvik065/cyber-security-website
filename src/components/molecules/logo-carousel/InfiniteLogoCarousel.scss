@@ -1,0 +1,34 @@
+@import '../../../styles/variables';
+
+
+  .scroller{
+    max-width: 100vi;
+    overflow: hidden;
+  }
+
+  .scroller__inner{
+    padding-block: 1rem;
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    
+  }
+
+  .scroller[data-animated='true']{
+    overflow: hidden;
+    border: 1px solid $border-color;
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  }
+
+  .scroller[data-animated='true'] .scroller__inner{
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll 40s linear infinite;
+  }
+ 
+  @keyframes scroll {
+    to{
+        transform: translate(-50%);
+    }
+  }

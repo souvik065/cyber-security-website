@@ -1,0 +1,23 @@
+@import '../../../styles/variables';
+
+.custom-icon {
+  color: inherit;
+  color: $primary-color;
+
+  &.size-small{
+    height: 0.5rem;
+  }
+ 
+  &.size-regular{
+    height: 1rem;
+  }
+
+  &.size-medium{
+    height: 1.5rem;
+  }
+
+  &.size-large{
+    height: 2.5rem;
+  }
+
+}

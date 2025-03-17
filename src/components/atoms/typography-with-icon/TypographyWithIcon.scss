@@ -1,0 +1,50 @@
+@import '../../../styles/variables';
+
+
+.typographyWithIcon {
+  font-weight: normal;
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+
+  &.inherit {
+    color: $primary-color !important;
+  }
+  &.dark-mode {
+    color: $primary-color;
+  }
+  &.light-mode {
+    color: $primary-dark;
+  }
+  &.font-weight-normal {
+    font-weight: normal;
+  }
+  &.font-weight-bold {
+    font-weight: bold;
+  }
+  &.text-align-right {
+    text-align: right;
+  }
+  &.text-align-left {
+    text-align: left;
+  }
+  &.text-align-center {
+    text-align: center;
+  }
+  &.font-dark-mode-color {
+    color: $primary-color;
+  }
+  &.font-light-mode-color {
+    color: $primary-dark;
+  }
+  .icon-left {
+    margin-right: 0.5rem;
+    font-size: inherit;
+    padding-top: 0.2rem;
+  }
+  .icon-right {
+    margin-left: 0.5rem;
+    font-size: inherit;
+    padding-top: 0.2rem;
+  }
+}

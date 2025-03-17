@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+
+
+
+.card-content {}
+
+.card-content-text {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.card-content div {
+    margin: 1rem;
+}
+
+
+
+.content-flex {
+    display: flex;
+}
+
+.content-block {
+    display: block;
+}
+
+
+.card-image {
+    padding: 1rem;
+    border: 0.1rem solid $border-color;
+    border-radius: 0.5rem;
+}
