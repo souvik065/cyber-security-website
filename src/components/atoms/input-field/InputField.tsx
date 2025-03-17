@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
 import { TextField, InputAdornment, IconButton, Typography, Box, useTheme } from "@mui/material"
 import type { InputBaseProps } from "@mui/material"
 import type { SxProps, Theme } from "@mui/material/styles"
@@ -71,7 +70,7 @@ export const InputField: React.FC<InputFieldProps> = ({
   ...rest
 }) => {
   const theme = useTheme()
-  const [isFocused, setIsFocused] = useState(false)
+  //const [isFocused, setIsFocused] = useState(false)
   const isDarkMode = theme.palette.mode === "dark"
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -150,8 +149,8 @@ export const InputField: React.FC<InputFieldProps> = ({
           ) : null,
           ...rest,
         }}
-        onFocus={() => setIsFocused(true)}
-        onBlur={() => setIsFocused(false)}
+        //onFocus={() => setIsFocused(true)}
+        //onBlur={() => setIsFocused(false)}
         sx={{
           "& .MuiOutlinedInput-root": {
             borderRadius: `${radius}px`,

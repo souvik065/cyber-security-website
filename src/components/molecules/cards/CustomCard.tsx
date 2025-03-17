@@ -24,9 +24,9 @@ export const CustomCard: React.FC<CustomCardProps> = ({
     height,
     isTag,
     tagValue,
-    tagColor,
+    //tagColor,
     customContent,
-    onClick,
+    //onClick,
     sx = {},
 }) => {
 

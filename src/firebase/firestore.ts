@@ -3,8 +3,8 @@ import { collection, addDoc } from 'firebase/firestore';
 import { db } from './firebaseConfig';
 import { ContactFormData } from '../types/ContactForm';
 
-const MAX_RETRIES = 3;
-const RETRY_DELAY = 1000; // 1 second
+//const MAX_RETRIES = 3;
+//const RETRY_DELAY = 1000; // 1 second
 
 
 export const storeContactForm = async (formData: ContactFormData) => {

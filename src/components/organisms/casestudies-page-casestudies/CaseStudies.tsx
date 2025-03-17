@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material"
+import { Box } from "@mui/material"
 import TypographyStyles from "../../atoms/typography/TypographyStyles";
 import { CustomCard } from "../../molecules/cards/CustomCard";
 import CustomAvatar from "../avatar/CustomAvatar";
@@ -10,7 +10,7 @@ import ava3 from "../../../assets/images/avatar-img-3.png"
 import ava4 from "../../../assets/images/avatar-img-4.png"
 import ava5 from "../../../assets/images/avatar-img-5.png"
 
-import { Apple, Android, Microsoft, Google } from "@mui/icons-material";
+import { Android } from "@mui/icons-material";
 import { Reveal } from "../../utils/Reveal";
 
 const CaseStudies = () => {

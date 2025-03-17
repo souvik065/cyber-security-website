@@ -1,10 +1,6 @@
 import { TypographyProps } from "../../../types/TypographyProps";
 import "./TypographyStyles.scss"
 
-interface TypographyStylesProps {
-    highlight?: string | string[];
-    // other props...
-}
 
 const TypographyStyles = ({ className, variant = "body", children, fontWeight, color, highlight, highlightClass = "highlight" }: TypographyProps) => {
     const tagMapping: { [key: string]: keyof JSX.IntrinsicElements } = {

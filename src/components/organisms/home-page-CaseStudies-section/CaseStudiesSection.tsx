@@ -4,7 +4,7 @@ import { Reveal } from "../../utils/Reveal";
 import { CustomCard } from "../../molecules/cards/CustomCard";
 import CustomAvatar from "../avatar/CustomAvatar";
 import TypographyWithIcon from "../../atoms/typography-with-icon/TypographyWithIcon";
-import { Apple, Android, Microsoft, Google, ArrowRightAlt } from "@mui/icons-material";
+import { Android, ArrowRightAlt } from "@mui/icons-material";
 import { useNavigate } from 'react-router-dom';
 
 
@@ -13,7 +13,7 @@ import ava1 from "../../../assets/images/avatar-img-1.png"
 import ava2 from "../../../assets/images/avatar-img-2.png"
 import ava3 from "../../../assets/images/avatar-img-3.png"
 import ava4 from "../../../assets/images/avatar-img-4.png"
-import ava5 from "../../../assets/images/avatar-img-5.png"
+//import ava5 from "../../../assets/images/avatar-img-5.png"
 import CustomButton from "../../atoms/button/customButton";
 
 const CaseStudiesSection = () => {

@@ -1,20 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Navbar from './Navbar';
 
-const menuItem = [
-  {
-    name: 'Products & Features',
-    path: '',
-  },
-  {
-    name: 'Plan & Pricing',
-    path: '',
-  },
-  {
-    name: 'Learn & Support',
-    path: '',
-  },
-];
+// const menuItem = [
+//   {
+//     name: 'Products & Features',
+//     path: '',
+//   },
+//   {
+//     name: 'Plan & Pricing',
+//     path: '',
+//   },
+//   {
+//     name: 'Learn & Support',
+//     path: '',
+//   },
+// ];
 
 
 const meta = {

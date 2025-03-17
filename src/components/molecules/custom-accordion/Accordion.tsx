@@ -30,7 +30,7 @@ interface AccordionProps {
 export default function Accordion({ items, sx }: AccordionProps) {
   const [expanded, setExpanded] = useState<string | false>(items.find((item) => item.defaultExpanded)?.title || false)
 
-  const handleChange = (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+  const handleChange = (panel: string) => (_event: React.SyntheticEvent, isExpanded: boolean) => {
     setExpanded(isExpanded ? panel : false)
   }
 

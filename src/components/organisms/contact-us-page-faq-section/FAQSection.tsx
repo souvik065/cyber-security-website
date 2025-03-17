@@ -1,7 +1,6 @@
-import { Box, Typography } from "@mui/material"
+import { Box } from "@mui/material"
 import Accordion from "../../molecules/accordion/accordion"
 import TypographyStyles from "../../atoms/typography/TypographyStyles"
-import HoverExpandAccordion from "../../molecules/hover-expand-accordion/HoverExpandAccordion"
 
 
 const FAQSection = () => {

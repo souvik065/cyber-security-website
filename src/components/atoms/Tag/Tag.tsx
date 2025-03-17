@@ -1,6 +1,6 @@
 import React from 'react';
 import { Chip, ChipProps } from '@mui/material';
-import { useTheme, Theme } from '@mui/material/styles';
+import { Theme } from '@mui/material/styles';
 import { TagProps } from "../../../types/TagProps"
 import { styled } from "@mui/material"
 
@@ -32,6 +32,7 @@ export const Tag: React.FC<TagProps & {
   color = "primary",
   size = "small",
   variant = "filled",
+  style,
   onDelete,
   ...props
 }) => {
@@ -40,6 +41,7 @@ export const Tag: React.FC<TagProps & {
   return (
     <StyledTag 
       label={label} 
+      style={style}
       color={isCustomColor ? undefined : (color as ChipProps['color'])} 
       customColor={isCustomColor ? color : undefined}
       size={size} 

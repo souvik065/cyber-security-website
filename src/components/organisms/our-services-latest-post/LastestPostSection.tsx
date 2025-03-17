@@ -8,7 +8,6 @@ import blog4 from "../../../assets/images/image (21).png"
 import blog5 from "../../../assets/images/image (22).png"
 
 
-import BreadCrumbs from "../../atoms/breadcrumbs/Breadcrumbs"
 import { Reveal } from "../../utils/Reveal"
 //import { useState } from "react"
 

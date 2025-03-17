@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Typography, SxProps, Theme } from "@mui/material";
+import { Box } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { InlineBannerProps } from "../../../types/InlineBannerProps";
@@ -15,7 +15,7 @@ const InlineBanner: React.FC<InlineBannerProps> = ({
   timings,
   additionalDetails = [],
   actionText,
-  onActionClick,
+  //onActionClick,
   sx,
 }) => {
   return (

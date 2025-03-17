@@ -1,14 +1,13 @@
-import { Alert, Box, Input, Snackbar } from "@mui/material"
+import { Alert, Box, Snackbar } from "@mui/material"
 import TypographyStyles from "../../atoms/typography/TypographyStyles"
 import CustomButton from "../../atoms/button/customButton"
-import { useNavigate } from 'react-router-dom';
 
 // Images
 import NewsLetterImg from "../../../assets/images/our-services-newsletter.png"
 import { Reveal } from "../../utils/Reveal"
 import InputField from "../../atoms/input-field/InputField";
 import { useRef, useState } from "react";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { addDoc, db, collection } from "../../../firebase/firebaseConfig";
 import { serverTimestamp } from "firebase/firestore";
 const NewsLetterSection = () => {
@@ -18,18 +17,11 @@ const NewsLetterSection = () => {
     const handleSnackbarClose = () => {
         setSnackbarOpen(false)
     }
-    const navigate = useNavigate();
 
     const [email, setEmail] = useState("");
 
     const ref = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: ref,
-        offset: ["start start", "end start"]
-    })
 
-    const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-    const textY = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
 
     const handleSubscribe = async () => {
         if (!email) {
@@ -110,7 +102,6 @@ const NewsLetterSection = () => {
                                 Subscribe
                             </CustomButton>
                         </Reveal>
-
                     </Box>
                 </Box>
                 {/* Success Snackbar */}

@@ -1,4 +1,4 @@
-import { Alert, Box, IconButton, Snackbar, SxProps, Theme, useMediaQuery, useTheme } from "@mui/material"
+import { Alert, Box, IconButton, Snackbar, SxProps, Theme } from "@mui/material"
 import TypographyStyles from "../../atoms/typography/TypographyStyles";
 import InputField from "../../atoms/input-field/InputField";
 import CustomButton from "../../atoms/button/customButton";
@@ -11,13 +11,9 @@ import { sendContactEmail } from "../../../firebase/sendEmail";
 import { Reveal } from "../../utils/Reveal";
 
 // icons
-//import SendIcon from "@mui/icons-material/Send"
-
+// import SendIcon from "@mui/icons-material/Send"
 
 const GetInTouch = () => {
-    const theme = useTheme()
-    const isMobile = useMediaQuery(theme.breakpoints.down("sm"))
-    const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"))
 
     const [errors, setErrors] = useState<ContactFormErrors>({})
     const [snackbarOpen, setSnackbarOpen] = useState(false)
@@ -156,22 +152,7 @@ const GetInTouch = () => {
         gap: 2,
     }
 
-    const infoContainerSx: SxProps<Theme> = {
-        display: "grid",
-        gridTemplateRows: "auto auto 1fr",
-        gap: 4,
-        p: { xs: 2, sm: 3, md: 4 },
-        bgcolor: "primary.main",
-        color: "primary.contrastText",
-        borderRadius: 2,
-    }
-
-    const contactItemSx: SxProps<Theme> = {
-        display: "flex",
-        alignItems: "center",
-        gap: 2,
-        mb: 2,
-    }
+    
 
     return (
         <Box sx={{ 

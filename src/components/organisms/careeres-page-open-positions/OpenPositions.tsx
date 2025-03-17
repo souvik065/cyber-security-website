@@ -7,13 +7,13 @@ import { WorkOutline } from "@mui/icons-material";
 import { Reveal } from "../../utils/Reveal";
 
 // Sample Breadcrumbs data
-const FilterBreadcrumbs = [
-    { id: 1, title: "Software Engineer", category: "Tech" },
-    { id: 2, title: "Data Scientist", category: "Tech" },
-    { id: 3, title: "Marketing Specialist", category: "Marketing" },
-    { id: 4, title: "Product Manager", category: "Management" },
-    { id: 5, title: "Graphic Designer", category: "Design" },
-];
+// const FilterBreadcrumbs = [
+//     { id: 1, title: "Software Engineer", category: "Tech" },
+//     { id: 2, title: "Data Scientist", category: "Tech" },
+//     { id: 3, title: "Marketing Specialist", category: "Marketing" },
+//     { id: 4, title: "Product Manager", category: "Management" },
+//     { id: 5, title: "Graphic Designer", category: "Design" },
+// ];
 
 const OpenPositions = () => {
 

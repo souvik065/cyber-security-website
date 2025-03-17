@@ -1,6 +1,4 @@
 import { PaletteMode } from "@mui/material";
-import { useTheme } from "styled-components";
-
 
 const createColor = (main: string, light?: string) => ({
   light: light || main,

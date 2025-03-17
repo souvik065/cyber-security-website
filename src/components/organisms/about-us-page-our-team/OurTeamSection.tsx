@@ -6,10 +6,10 @@ import { CustomAvatar } from "../../organisms/avatar/CustomAvatar";
 
 // Images
 import ava1 from "../../../assets/images/avatar-img-1.png"
-import ava2 from "../../../assets/images/avatar-img-2.png"
-import ava3 from "../../../assets/images/avatar-img-3.png"
-import ava4 from "../../../assets/images/avatar-img-4.png"
-import ava5 from "../../../assets/images/avatar-img-5.png"
+//import ava2 from "../../../assets/images/avatar-img-2.png"
+//import ava3 from "../../../assets/images/avatar-img-3.png"
+//import ava4 from "../../../assets/images/avatar-img-4.png"
+//import ava5 from "../../../assets/images/avatar-img-5.png"
 import { Reveal } from "../../utils/Reveal";
 
 const OurTeamSection = () => {

@@ -1,10 +1,10 @@
-import { Box, Typography } from "@mui/material"
+import { Box } from "@mui/material"
 import { CustomCard } from "../../molecules/cards/CustomCard";
 import blog1 from "../../../assets/images/our-servce-blog2.png"
-import blog2 from "../../../assets/images/image (18).png"
-import blog3 from "../../../assets/images/image (20).png"
-import blog4 from "../../../assets/images/image (21).png"
-import blog5 from "../../../assets/images/image (22).png"
+//import blog2 from "../../../assets/images/image (18).png"
+//import blog3 from "../../../assets/images/image (20).png"
+//import blog4 from "../../../assets/images/image (21).png"
+//import blog5 from "../../../assets/images/image (22).png"
 import TypographyStyles from "../../atoms/typography/TypographyStyles";
 import { Reveal } from "../../utils/Reveal";
 import CustomButton from "../../atoms/button/customButton";

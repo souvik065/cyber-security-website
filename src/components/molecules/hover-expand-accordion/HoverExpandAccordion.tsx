@@ -11,7 +11,6 @@ import {
     type SxProps,
     type Theme,
 } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import TypographyStyles from "../../atoms/typography/TypographyStyles";
 import { Reveal } from "../../utils/Reveal";
 
@@ -33,7 +32,7 @@ interface AccordionProps {
 
 }
 
-export default function HoverExpandAccordion({ items, sx, expandicon, titleVariant, gap, itemAlignCenter }: AccordionProps) {
+export default function HoverExpandAccordion({ items, sx, titleVariant, gap, itemAlignCenter }: AccordionProps) {
     const [hoveredPanel, setHoveredPanel] = useState<string | false>(items.find((item) => item.defaultExpanded)?.title || false);
 
     return (

@@ -20,7 +20,6 @@ export default function FloatingAnimationWrapper({
   floatIntensity = 15,
   floatDuration = 4,
   hoverScale = 1.05,
-  width,
   withGlow = true,
   glowColor,
 }: FloatingAnimationWrapperProps) {

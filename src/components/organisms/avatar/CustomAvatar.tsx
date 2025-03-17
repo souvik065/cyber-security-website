@@ -56,7 +56,7 @@ export const CustomAvatar: React.FC<CustomAvatarProps> = ({
   isFunctional = false,
   menuItems = [],
   sx = {},
-  badgeSx = {},
+  //badgeSx = {},
   onClick,
 }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)

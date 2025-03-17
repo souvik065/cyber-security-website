@@ -6,14 +6,12 @@ import {
     Accordion as MuiAccordion,
     AccordionSummary,
     AccordionDetails,
-    Typography,
-    Box,
     type SxProps,
     type Theme,
+    Box,
 } from "@mui/material"
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import TypographyStyles from "../../atoms/typography/TypographyStyles";
 import { Reveal } from "../../utils/Reveal";
+import TypographyStyles from "../../atoms/typography/TypographyStyles";
 
 
 // Define TypeScript interfaces for our props
@@ -31,10 +29,10 @@ interface AccordionProps {
 }
 
 export default function Accordion({ items, sx }: AccordionProps) {
-    const [hoveredPanel, setHoveredPanel] = useState<string | null>(null);
+    //const [hoveredPanel, setHoveredPanel] = useState<string | null>(null);
     const [expanded, setExpanded] = useState<string | false>(items.find((item) => item.defaultExpanded)?.title || false)
 
-    const handleChange = (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+    const handleChange = (panel: string) => (_event: React.SyntheticEvent, isExpanded: boolean) => {
         setExpanded(isExpanded ? panel : false)
     }
 

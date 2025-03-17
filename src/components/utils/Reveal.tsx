@@ -1,6 +1,5 @@
 import { useTheme } from "@mui/material/styles";
 import { motion, useInView, useAnimation} from "framer-motion"
-import React, { ReactElement } from "react";
 import { ReactNode, useEffect, useRef  } from "react";
 import { SxProps, Theme } from "@mui/material/styles";
 import { Box } from "@mui/material";
@@ -25,9 +24,9 @@ export const Reveal = ({ children, width="fit-content",height="fit-content", Sel
     const theme = useTheme();
 
     // Check if the child is an <img> element
-  const isImage = React.Children.toArray(children).some(
-    (child) => (child as ReactElement)?.type === "img",
-  );
+//   const isImage = React.Children.toArray(children).some(
+//     (child) => (child as ReactElement)?.type === "img",
+//   );
 
 
     useEffect(()=>{
@@ -42,7 +41,7 @@ export const Reveal = ({ children, width="fit-content",height="fit-content", Sel
     return (
         <Box ref={ref} sx={{...sx, position:"relative", width, height}}>
             <Box sx={{ position: 'relative', width: '100%', height: '100%' }}>
-                <motion.div 
+                <motion.div
                     variants={{
                         hidden:{opacity:0, y:75},
                         visible:{opacity:1, y:0}
