@@ -7,6 +7,7 @@ export default defineConfig({
   build: {
     outDir: "dist", // Should be "dist", not "build"
   },
+  base:"/cyber-security-website/",
   plugins: [
     tailwindcss(),
     react()],
